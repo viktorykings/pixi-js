@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Pond</title>
+  </head>
+
+  <script>
+    const handleGoBack = () => {
+      window.location.href = "http://localhost:8080/src";
+    };
+  </script>
+  <body>
+    <div id="app-fish-pond" class="app">
+      <header>
+        <button onclick="handleGoBack()">Go Back</button>
+      </header>
+      <div id="fish-pond-wrapper" class="wrapper">
+        <div id="pixi-container--fish-pond"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/apps/fish-pond"></script>
+  </body>
+</html>
