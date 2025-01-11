@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Graphics</title>
+  </head>
+  <script>
+    const handleGoBack = () => {
+      window.location.href = "http://localhost:8080/src";
+    };
+  </script>
+  <body>
+    <div id="app-graphics" class="app">
+      <header>
+        <button onclick="handleGoBack()">Go Back</button>
+      </header>
+      <div id="graphics-wrapper" class="wrapper">
+        <div id="pixi-container--graphics"></div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="../apps/graphics"></script>
+</html>
