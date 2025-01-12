@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>PixiJS - Template</title>
+  </head>
+
+  <script>
+    const handleGoBack = () => {
+      window.location.href = "http://localhost:8080/src";
+    };
+  </script>
+
+  <body>
+    <div id="app-snow" class="app">
+      <header>
+        <button onclick="handleGoBack()">Go Back</button>
+      </header>
+      <div id="snow-wrapper" class="wrapper">
+        <div id="pixi-container--snow"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/apps/snow"></script>
+  </body>
+</html>
