@@ -1,4 +1,5 @@
-import { Application, Graphics } from "pixi.js";
+import { Application, Assets, Graphics } from "pixi.js";
+import { createButton } from "../../components/button";
 
 (async () => {
   const app = new Application();
@@ -7,8 +8,11 @@ import { Application, Graphics } from "pixi.js";
     background: "#1099bb",
     resizeTo: document.getElementById("graphics-wrapper")!,
   });
+  await Assets.load("https://pixijs.com/assets/bitmap-font/desyrel.xml");
 
   document.getElementById("pixi-container--graphics")!.appendChild(app.canvas);
+
+  createButton(app, "Go back", "http://localhost:8080");
 
   const rectangle = new Graphics()
     .rect(200, 200, 50, 80)
